@@ -1,0 +1,55 @@
+//====================================================================================================
+.footer{
+    &__bg{
+        background-color: $dbrown; 
+    }
+    &__container{
+        padding: rem(78) rem(0);
+        max-width: rem(1361);
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inf{
+        margin-right: rem(35);
+    }
+    &__logo{
+        &-svg{
+            fill: $white;
+            transition: .2s;
+            &:hover{
+                fill: $orange;
+            }
+        }
+    }
+    &__link{
+        display: inline-block;
+        margin: rem(0) rem(25);
+        fill: $white;
+        transition: .2s;
+        transform: scale(1);
+        &:hover{
+            fill: $orange;
+            transform: scale(1.1);
+        }
+    }
+    &__app{
+        &-download{
+            display: block;
+            transform: scale(0.5);
+        }
+    }
+    &__appl{
+        display: inline-block;
+        transform: scale(0.78);
+        transition: .2s;
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    
+
+}
+//====================================================================================================
