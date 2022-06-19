@@ -1,0 +1,119 @@
+//====================================================================================================
+.header {
+    &__container {
+    }
+    &__logo {
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: rem(65) rem(0);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(20);
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: rem(20);
+        color: $brown;
+        margin: rem(0) rem(34.5);
+        text-transform: uppercase;
+        transition: .3s;
+        transform: scale(1);
+        &:hover{
+            transform: scale(1.07);
+            color: $dbrown;
+        }
+    }
+    &__map {
+        text-transform: uppercase;
+        padding-top: rem(20);
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: rem(20);
+        color: #FFC59E;
+        position: relative;
+        padding-left: rem(50);
+        padding-right: 0;
+        transition: .3s;
+        &:hover{
+            color: $dbrown;
+        }
+        &:hover .nav__location{
+           fill: $dbrown;
+        }
+    }
+    &__location{
+        height: rem(46);
+        width: rem(46);
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: rem(13);
+        fill: $orange;
+        transition: .3s;
+    }
+}
+.clinic{
+    &__container{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        padding-top: rem(103);
+
+    }
+    &__title{
+        font-weight: 400;
+        font-size: rem(80);
+        line-height: rem(110);
+        color: $dark;
+        margin-bottom: rem(50);
+    }
+    &__link{
+        display: inline-block;
+        margin-bottom: rem(195);
+        background-color: $orange;
+        padding: rem(24) rem(83);
+        color: $white;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: rem(20);
+        box-shadow: rem(0) rem(4) rem(20) $orange;
+        border-radius: rem(33.5);
+        transition: .2s;
+        transform: scale(1);
+        &:hover{
+            background-color: $dbrown;
+            box-shadow: rem(0) rem(4) rem(20) $dbrown;
+            transform: scale(1.1);
+        }
+    }
+    &__social{
+        &-link{
+            margin: 0 rem(25);
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    &__banner{
+        padding-top: rem(47);
+    }
+    &__svg{
+        fill: $brown;
+        display: inline-block;
+        transform: scale(1);
+        transition: .2s;
+        &:hover{
+            fill: $dbrown;
+            transform: scale(1.1);
+        }
+    }
+}
+//====================================================================================================
